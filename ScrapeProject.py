@@ -21,8 +21,13 @@ PriceOnNeweeg = PriceSite1.get_text().strip('$')
 PriceOnEbay = PriceSite2.get_text().strip('$')
 PriceRcwilley = PriceSite3.get_text()
 
+# Adding Price on ____ to clarify the website
+Newegg = "Price on Newegg : " + str(PriceOnNeweeg)
+eBay = "Price on eBay : " + str(PriceOnEbay)
+Rcwilley = "Price on RC Willey : " + str(PriceRcwilley)
+
 ### = Saving the outputs as a common variable.
-Prices = PriceOnNeweeg, PriceOnEbay, PriceRcwilley
+Prices = Newegg, eBay, Rcwilley
 
 ### Printing the prices scraped off of Newegg, eBay, and RC Willey.
 print(Prices)
